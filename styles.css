@@ -499,28 +499,6 @@ p {
   filter: saturate(0.88) contrast(1.02);
 }
 
-.portrait-note {
-  position: absolute;
-  right: -25px;
-  bottom: 25px;
-  display: grid;
-  gap: 6px;
-  padding: 16px 18px;
-  border: 1px solid rgba(243, 239, 229, 0.28);
-  border-radius: 3px;
-  background: rgba(23, 39, 37, 0.93);
-  color: var(--paper-soft);
-  box-shadow: 0 18px 36px -22px rgba(17, 32, 29, 0.85);
-}
-
-.portrait-note span {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  line-height: 1.45;
-  text-transform: uppercase;
-}
-
 .hero-portrait figcaption {
   margin-top: 15px;
   text-align: center;
@@ -1031,7 +1009,7 @@ p {
 
 /* Contact */
 .contact {
-  min-height: 720px;
+  min-height: 660px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -1170,7 +1148,7 @@ p {
   .site-nav { gap: 24px; }
   .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr); gap: 50px; }
   .hero-copy h1 { font-size: clamp(52px, 7vw, 77px); }
-  .portrait-note { right: -12px; }
+
   .practice-card { min-height: 660px; }
   .personal-images { min-height: 610px; }
 }
@@ -1254,8 +1232,7 @@ p {
   .hero-actions .text-link { max-width: 100%; white-space: normal; }
   .hero-portrait { margin-top: 32px; }
   .portrait-frame { width: calc(100% - 20px); }
-  .portrait-note { right: -10px; bottom: 15px; padding: 13px 14px; }
-  .portrait-note span { font-size: 8.5px; }
+
   .confluence { height: 115px; }
 
   h2 { font-size: clamp(39px, 13vw, 55px); }
@@ -1281,7 +1258,7 @@ p {
   .personal-copy h2 { font-size: clamp(39px, 12vw, 52px); }
   .path-note { padding: 25px 22px; }
 
-  .contact { min-height: 650px; }
+  .contact { min-height: 580px; }
   .contact h2 { font-size: clamp(42px, 13.5vw, 59px); }
   .contact p { font-size: 17px; }
   .contact .button { width: 100%; max-width: 280px; }
@@ -1299,7 +1276,7 @@ p {
   .wordmark { font-size: 19px; }
   .hero-copy h1 { font-size: 45px; }
   .eyebrow { max-width: 100%; font-size: 9.8px; letter-spacing: 0.11em; }
-  .portrait-note { right: -4px; }
+
   .practice-card { padding-inline: 21px; }
   .practice-link { font-size: 9.6px; }
   .personal-images { min-height: 460px; }
