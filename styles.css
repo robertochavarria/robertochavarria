@@ -1,5 +1,5 @@
 /* Roberto Chavarria — personal site
-   Shared family typography, personal palette, and a two-path confluence motif. */
+   Shared family typography, personal palette, and a confluence motif. */
 
 @font-face {
   font-family: "Hanken Grotesk";
@@ -836,7 +836,7 @@ p {
 
 .involvement-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   margin-top: 70px;
   background: var(--light-line);
@@ -844,8 +844,8 @@ p {
 }
 
 .involvement {
-  min-height: 410px;
-  padding: clamp(34px, 5vw, 58px);
+  min-height: 480px;
+  padding: clamp(30px, 3.5vw, 46px);
   background: rgba(21, 42, 53, 0.96);
   display: flex;
   flex-direction: column;
@@ -863,7 +863,7 @@ p {
   max-width: 13ch;
   margin-top: 25px;
   color: var(--paper-soft);
-  font-size: clamp(31px, 3.3vw, 45px);
+  font-size: clamp(29px, 2.8vw, 41px);
   font-weight: 360;
   line-height: 1.04;
 }
@@ -1151,6 +1151,8 @@ p {
   .hero-copy h1 { font-size: clamp(52px, 7vw, 77px); }
 
   .practice-card { min-height: 660px; }
+  .involvement-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .involvement:last-child { grid-column: 1 / -1; min-height: 390px; }
   .personal-images { min-height: 610px; }
 }
 
@@ -1206,6 +1208,7 @@ p {
   .involved-intro { grid-template-columns: 1fr; }
   .involved-intro > p:last-child { margin-top: 26px; max-width: 64ch; }
   .involvement-grid { grid-template-columns: 1fr; }
+  .involvement:last-child { grid-column: auto; }
   .involvement { min-height: 360px; }
 
   .personal-images { min-height: 720px; width: min(100%, 600px); margin: 0 auto; }

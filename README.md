@@ -2,7 +2,7 @@
 
 Production source for [robertochavarria.com](https://robertochavarria.com), Roberto Chavarria’s personal umbrella site.
 
-The site introduces Roberto holistically, provides the parent context for his two practices—[Emerging Clarity](https://emergingclarity.com) and [Clearly Audacious](https://clearlyaudacious.com)—and briefly names the other organizations and work he helps carry.
+The site introduces Roberto holistically, provides the parent context for his two practices—[Emerging Clarity](https://emergingclarity.com) and [Clearly Audacious](https://clearlyaudacious.com)—and orients visitors to the Society for the Way of Knowledge, Human Institute, and the [Colorado Connection Collective](https://coloradoconnectioncollective.com).
 
 ## Structure
 
