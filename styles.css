@@ -1171,11 +1171,18 @@ p {
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transform: translateY(-14px);
-    transition: opacity 0.25s ease, transform 0.25s var(--ease);
+    transition: opacity 0.25s ease, transform 0.25s var(--ease), visibility 0s linear 0.25s;
   }
-  .site-header.menu-open .site-nav { opacity: 1; pointer-events: auto; transform: none; }
+  .site-header.menu-open .site-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    transition-delay: 0s;
+  }
   .site-nav a,
   .site-nav .nav-contact {
     width: 100%;
