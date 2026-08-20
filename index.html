@@ -26,7 +26,7 @@
     <link rel="preload" href="/assets/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/newsreader-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/styles.css?v=6">
+    <link rel="stylesheet" href="/styles.css?v=7">
     <noscript>
       <style>
         .reveal { opacity: 1 !important; transform: none !important; }
@@ -279,7 +279,33 @@
           <a class="button button--dark" href="mailto:hello@robertochavarria.com">
             Write to Roberto <span aria-hidden="true">→</span>
           </a>
+          <a class="contact-book-link" href="#book">Or choose a time directly <span aria-hidden="true">↓</span></a>
           <a class="email" href="mailto:hello@robertochavarria.com">hello@robertochavarria.com</a>
+        </div>
+      </section>
+
+      <section class="booking section" id="book" aria-labelledby="booking-title">
+        <div class="wrap booking-inner reveal">
+          <p class="eyebrow">Choose a time</p>
+          <h2 id="booking-title">Book an exploration session.</h2>
+          <p class="booking-intro">If you already know you would like to talk, select a time below. We can begin with whichever part of my work brought you here.</p>
+          <div class="cal-embed-shell">
+            <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-exploration-session">
+              <p class="cal-embed-fallback">Loading the calendar&hellip; <a href="https://cal.com/clawmentor-ai/exploration-session">Open the booking page directly</a>.</p>
+            </div>
+          </div>
+          <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "exploration-session", {origin:"https://app.cal.com"});
+            Cal.config = Cal.config || {};
+            Cal.config.forwardQueryParams = true;
+            Cal.ns["exploration-session"]("inline", {
+              elementOrSelector:"#my-cal-inline-exploration-session",
+              config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+              calLink: "clawmentor-ai/exploration-session"
+            });
+            Cal.ns["exploration-session"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+          </script>
         </div>
       </section>
     </main>
