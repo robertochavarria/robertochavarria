@@ -403,7 +403,8 @@ p {
 .hero {
   position: relative;
   min-height: 100svh;
-  padding: clamp(136px, 14vw, 190px) 0 96px;
+  /* Keep the complete opening message and actions in the first viewport. */
+  padding: clamp(104px, 8vw, 124px) 0 clamp(56px, 5vw, 72px);
   overflow: hidden;
 }
 
@@ -422,13 +423,13 @@ p {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.62fr);
   align-items: center;
-  gap: clamp(58px, 7vw, 98px);
+  gap: clamp(46px, 5vw, 72px);
 }
 
 .hero-copy h1 {
   max-width: 12.5ch;
-  margin-top: 28px;
-  font-size: clamp(54px, 7.4vw, 100px);
+  margin-top: 20px;
+  font-size: clamp(52px, 6.6vw, 88px);
   font-weight: 320;
   line-height: 0.93;
   letter-spacing: -0.045em;
@@ -442,13 +443,13 @@ p {
 
 .hero-intro {
   max-width: 60ch;
-  margin-top: 38px;
+  margin-top: 28px;
 }
 
 .hero-intro p {
-  margin-bottom: 15px;
-  font-size: clamp(17px, 1.45vw, 20px);
-  line-height: 1.65;
+  margin-bottom: 12px;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -456,7 +457,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   gap: 22px;
-  margin-top: 34px;
+  margin-top: 26px;
 }
 
 .hero-portrait {
@@ -471,41 +472,19 @@ p {
   width: min(100%, 390px);
 }
 
-.portrait-frame::before {
-  content: "";
-  position: absolute;
-  inset: -15px 16px 20px -16px;
-  border: 1px solid rgba(53, 111, 145, 0.45);
-  border-radius: 50% 50% 16px 16px / 42% 42% 16px 16px;
-  z-index: -1;
-}
-
+.portrait-frame::before,
 .portrait-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 48% 48% 14px 14px / 38% 38% 14px 14px;
-  box-shadow: inset 0 0 0 1px var(--line);
-  pointer-events: none;
+  display: none;
 }
 
 .portrait-frame img {
+  display: block;
   width: 100%;
-  height: clamp(410px, 44vw, 570px);
+  height: clamp(420px, 48vw, 580px);
   object-fit: cover;
-  object-position: 50% 27%;
-  border-radius: 48% 48% 14px 14px / 38% 38% 14px 14px;
-  filter: saturate(0.88) contrast(1.02);
-}
-
-.hero-portrait figcaption {
-  margin-top: 15px;
-  text-align: center;
-  color: var(--ink-faint);
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
+  object-position: 50% 24%;
+  border: 1px solid var(--line);
+  border-radius: 5px;
 }
 
 .confluence {
