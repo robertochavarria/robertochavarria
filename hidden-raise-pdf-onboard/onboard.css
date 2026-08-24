@@ -1,5 +1,8 @@
-.onboard-hero { position: relative; min-height: min(710px, 92svh); padding: clamp(144px, 14vw, 188px) 0 106px; overflow: hidden; }
-.onboard-hero__inner { position: relative; z-index: 2; }
+.onboard-hero { position: relative; min-height: min(710px, 92svh); padding: clamp(144px, 14vw, 188px) 0 86px; overflow: hidden; }
+.onboard-hero__inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(260px, .72fr); align-items: center; gap: clamp(28px, 7vw, 112px); }
+.onboard-hero__copy { position: relative; z-index: 1; }
+.onboard-hero__book { justify-self: end; width: min(100%, 430px); margin: -36px 1vw -105px 0; filter: drop-shadow(15px 30px 26px rgba(21,42,53,.2)); transform: rotate(1.5deg); }
+.onboard-hero__book img { display: block; width: 100%; height: auto; }
 .onboard-hero h1 { max-width: 12.5ch; margin-top: 24px; font-size: clamp(56px, 7.5vw, 96px); line-height: .92; }
 .onboard-hero h1 em { display: block; color: var(--navy); font-weight: 330; }
 .onboard-hero__lead { max-width: 61ch; margin-top: 30px; font-size: clamp(17px, 1.45vw, 20px); line-height: 1.58; }
@@ -38,6 +41,8 @@
 
 @media (max-width: 720px) {
   .onboard-hero { min-height: auto; padding: 132px 0 90px; }
+  .onboard-hero__inner { grid-template-columns: 1fr; gap: 36px; }
+  .onboard-hero__book { justify-self: center; width: min(76vw, 360px); margin: -10px 0 -65px; }
   .onboard-hero h1 { max-width: 10.5ch; font-size: clamp(52px, 14.4vw, 72px); }
   .introduction__grid, .first-steps__heading { grid-template-columns: 1fr; gap: 36px; }
   .first-steps__heading h2, .first-steps__heading > p:last-child { grid-column: auto; }
