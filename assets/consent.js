@@ -3,7 +3,7 @@
 
   const STORAGE_KEY = 'rc-consent-v1';
   const GA_ID = 'G-Q1C5X36GE1';
-  const META_PIXEL_ID = '937298092749864';
+  const META_PIXEL_ID = '1062700936626882';
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
