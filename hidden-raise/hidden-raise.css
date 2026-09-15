@@ -13,3 +13,12 @@
 
 /* Conversion refinement: diagrams retain their native proportions; all early CTAs lead to the purchase section. */
 #buy{scroll-margin-top:94px}.section-cta{display:flex;justify-content:center;margin-top:54px}.section-cta--light{position:relative;z-index:1;margin-top:0;padding-top:62px}.button--outline{border:1px solid var(--navy);background:transparent;color:var(--navy)}.button--outline:hover{background:var(--navy);color:var(--paper-soft)}.preview-card{align-self:start}.preview-card img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}.preview-plan img{width:100%;max-width:360px;height:auto;aspect-ratio:auto;object-fit:contain}.plan-number{width:min(100%,360px);aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:center;align-items:center;border:1px solid var(--line);background:var(--paper-soft);box-shadow:0 24px 48px -38px rgba(21,42,53,.65);color:var(--navy)}.plan-number strong{font:400 clamp(88px,12vw,160px)/.72 var(--serif);letter-spacing:-.075em}.plan-number span{margin-top:14px;font:500 14px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase}.plan-number small{margin-top:20px;color:var(--ink-soft);font:10px/1.5 var(--mono);letter-spacing:.08em;text-align:center;text-transform:uppercase}.creator-media{position:relative;min-width:0;padding:0 36px 42px 0}.creator-image img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:60% 50%}.creator-portrait{position:absolute;right:0;bottom:0;width:clamp(118px,28%,185px);height:auto!important;aspect-ratio:auto;object-fit:cover;object-position:center;border:7px solid var(--paper-deep);box-shadow:0 18px 35px rgba(21,42,53,.22)}.creator-grid>div>p:not(.eyebrow)+p{margin-top:18px}.creator-grid .text-link{display:inline-flex}.creator .section-cta{margin-top:62px}@media(max-width:720px){.section-cta{margin-top:38px}.section-cta .button{width:100%;justify-content:center;text-align:center}.section-cta--light{padding-top:38px}.preview-card,.preview-card--offset{width:min(100%,500px)}.preview-plan img{max-width:100%}.creator-media{padding:0 25px 32px 0}.creator-portrait{width:130px;border-width:5px}.creator-image img{aspect-ratio:16/10;object-position:62% 50%}.creator .section-cta{margin-top:38px}}
+
+.final-ps {
+  margin: 1.75rem auto 0;
+  max-width: 46rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  text-align: left;
+  opacity: 0.95;
+}
